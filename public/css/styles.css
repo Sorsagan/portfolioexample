@@ -1,0 +1,233 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #202225;
+}
+
+.root {
+  position: relative;
+  width: 70%;
+  min-height: 80vh;
+  margin: auto;
+  background-color: #2f3136;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dots {
+  margin: 10px;
+  flex-shrink: 0;
+}
+.dots div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dots div:nth-child(1) {
+  background-color: #fc5753;
+}
+
+.dots div:nth-child(2) {
+  background-color: #fdbc40;
+}
+
+.dots div:nth-child(3) {
+  background-color: #36c84b;
+}
+
+.links {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.links > ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links > ol > li {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.links > ol > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sideelement2 {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+}
+
+.sideelement2::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 150px;
+  background-color: #202225;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sideelement2 > a {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff80;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+}
+
+.sideelement1 {
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+}
+
+.sideelement1 > ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+
+  margin-top: 10px;
+  padding: 0;
+}
+
+.sideelement1 > ul > li {
+  margin-top: 20px;
+}
+
+.sideelement1::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 150px;
+  background-color: #202225;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content {
+  width: calc(100% - 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+.mainContainer {
+  position: relative;
+  height: 100%;
+  right: 5%;
+  bottom: 0px;
+}
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffffcc;
+  font-size: 24px;
+  position: relative;
+  margin: 0;
+}
+
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  color: #c1f1da;
+  position: relative;
+  margin: 0;
+}
+
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  position: relative;
+  margin: 0;
+  color: #ffffff99;
+}
+
+.mainContainer > div > p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  position: relative;
+  margin: 0;
+  color: #ffffff66;
+  white-space: pre-wrap;
+}
+
+.spotifyContainer {
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.spotify {
+  align-self: flex-start;
+  margin: 0;
+}
+
+.spotifyContainer > p {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 20px;
+  position: relative;
+  margin: 0;
+  left: 3%;
+}
+
+.spotifyImg {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.spotifywrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0;
+  position: relative;
+  top: 10vh;
+}
