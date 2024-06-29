@@ -7,6 +7,14 @@ body {
   background-color: #202225;
 }
 
+.dark-mode {
+  background-color: rgba(28, 28, 28);
+}
+
+.root.dark-mode{
+  background-color: rgba(40, 40, 40);
+}
+
 .root {
   position: relative;
   width: 70%;
@@ -92,11 +100,15 @@ nav {
   transform: translateX(-50%);
 }
 
+.sideelement2.dark-mode::after {
+  background-color: rgba(28, 28, 28);
+}
+
 .sideelement2 > a {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff80;
+  color: #ffffff80 !important;
   text-decoration: none;
   display: block;
   margin-top: 20px;
@@ -108,6 +120,9 @@ nav {
   position: absolute;
   bottom: 15%;
   left: 3%;
+}
+.sideelement1.dark-mode{
+  background-color: rgba(40, 40, 40);
 }
 
 .sideelement1 > ul {
@@ -132,6 +147,9 @@ nav {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+.sideelement1.dark-mode::after {
+  background-color: rgba(28, 28, 28);
 }
 .content {
   width: calc(100% - 20%);
@@ -230,4 +248,16 @@ h3 {
   margin: 0;
   position: relative;
   top: 10vh;
+}
+
+.theme-toggle button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: inherit; /* Adjust based on your theme */
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle button:hover {
+  transform: scale(1.1); /* Example hover effect */
 }
