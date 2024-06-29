@@ -216,7 +216,7 @@ h3 {
 .spotifyContainer {
   display: flex;
   position: relative;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
   margin: 0;
@@ -226,21 +226,32 @@ h3 {
   align-self: flex-start;
   margin: 0;
 }
+.spotifyP{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 20px;
+  position: relative;
+  margin: 0;
+  left: 3%;
 
-.spotifyContainer > p {
+}
+.spotifyA {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: hsla(0, 0%, 100%, 0.5);
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   margin: 0;
   left: 3%;
 }
 
 .spotifyImg {
-  width: 200px;
-  height: 200px;
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -256,6 +267,16 @@ h3 {
   top: 10vh;
 }
 
+.notActive{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 20px;
+  position: relative;
+  margin: 0;
+  left: 3%;
+}
 .theme-toggle button {
   cursor: pointer;
   background-color: transparent;

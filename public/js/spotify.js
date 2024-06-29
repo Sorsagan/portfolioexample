@@ -7,9 +7,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       const data = await response.json();
       if (data && data.data && data.data.spotify) {
         const spotify = data.data.spotify;
+        const notActiveElement = document.querySelector('.notActive');
         const spotifyPElement = document.querySelector('.spotifyP');
+        const spotifyAElement = document.querySelector('.spotifyA');
         const spotifyImgElement = document.querySelector('.spotifyImg');
-        spotifyPElement.textContent = `${spotify.artist} - ${spotify.song}`;
+        notActiveElement.textContent = '';
+        spotifyPElement.textContent = `${spotify.song}`;
+        spotifyAElement.textContent = `${spotify.artist}`;
         spotifyImgElement.style.backgroundImage = `url(${spotify.album_art_url})`;
       } else {
         console.log('Spotify is not open');
