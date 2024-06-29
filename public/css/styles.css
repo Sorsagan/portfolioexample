@@ -11,7 +11,7 @@ body {
   background-color: rgba(28, 28, 28);
 }
 
-.root.dark-mode{
+.root.dark-mode {
   background-color: rgba(40, 40, 40);
 }
 
@@ -88,6 +88,10 @@ nav {
   right: 3%;
 }
 
+.sideelement2.dark-mode {
+  background-color: rgba(40, 40, 40);
+}
+
 .sideelement2::after {
   content: "";
   display: block;
@@ -121,7 +125,8 @@ nav {
   bottom: 15%;
   left: 3%;
 }
-.sideelement1.dark-mode{
+
+.sideelement1.dark-mode {
   background-color: rgba(40, 40, 40);
 }
 
