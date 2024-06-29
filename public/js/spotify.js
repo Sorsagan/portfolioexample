@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-      const response = await fetch('https://api.lanyard.rest/v1/users/417302173056237568');
+      const response = await fetch('https://api.lanyard.rest/v1/users/417302173056237568');/* https://github.com/Phineas/lanyard */ //check the github for more info
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
