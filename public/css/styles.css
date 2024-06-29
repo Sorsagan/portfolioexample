@@ -86,6 +86,7 @@ nav {
   position: absolute;
   top: 15%;
   right: 3%;
+  min-width: 24px;
 }
 
 .sideelement2.dark-mode {
