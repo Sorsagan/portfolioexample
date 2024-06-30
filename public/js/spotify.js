@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const spotifyImgElement = document.querySelector('.spotifyImg');
         notActiveElement.textContent = '';
         spotifyPElement.textContent = `${spotify.song}`;
-        spotifyAElement.textContent = `${spotify.artist}`;
+        spotifyAElement.textContent = `${spotify.artist.replace(/;/gi, ',')}`;
         spotifyImgElement.style.backgroundImage = `url(${spotify.album_art_url})`;
       } else {
         console.log('Spotify is not open');

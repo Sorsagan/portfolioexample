@@ -30,6 +30,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .dots {
   margin: 10px;
   flex-shrink: 0;
@@ -287,4 +288,67 @@ h3 {
 
 .theme-toggle button:hover {
   transform: scale(1.1); /* Example hover effect */
+}
+
+@media (max-width: 1024px) {
+  .root {
+    width: 90%; /* Increase width for smaller screens */
+    padding: 10px; /* Adjust padding */
+    border-radius: 20px; /* Optional: Adjust border-radius */
+  }
+
+  .content{
+    min-height: 65vh; /* Adjust height for smaller screens */
+  }
+
+  .links > ol > li, .mainContainer > div > p {
+    font-size: 16px; /* Adjust font sizes for readability */
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  .links {
+    width: 70`%; /* Adjust navigation links area */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .links > ol > li {
+    margin: 10px 5px;
+  }
+
+  .content, .spotifywrapper {
+    flex-direction: column; /* Adjust layout direction */
+  }
+
+  .sideelement1, .sideelement2 {
+    display: none; /* Optionally hide elements that might clutter small screens */
+  }
+  .theme-toggle button{
+    display: none;
+  }
+  .dots div {
+    width: 16px;
+    height: 16px;
+  }
+  .spotifyImg {
+    width: 100px;
+    height: 100px;
+  }
+  .spotifyP{
+    font-size: 16px;
+  }
+  .spotifyA{
+    font-size: 14px;
+  }
+  .notActive{
+    font-size: 16px;
+  }
 }
