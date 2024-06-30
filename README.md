@@ -1,4 +1,4 @@
-![](assets/websitelook.png)
+![](assets/v2.png)
 
 # Simple Portfolio Example
 
