@@ -315,7 +315,7 @@ h3 {
   }
 
   .links {
-    width: 70`%; /* Adjust navigation links area */
+    width: 70%; /* Adjust navigation links area */
     flex-direction: column; /* Stack links vertically */
     align-items: center; /* Center-align items */
   }
