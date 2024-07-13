@@ -301,7 +301,7 @@ h3 {
     min-height: 65vh; /* Adjust height for smaller screens */
   }
 
-  .links > ol > li, .mainContainer > div > p {
+  .mainContainer > div > p {
     font-size: 16px; /* Adjust font sizes for readability */
   }
   h1 {
@@ -322,6 +322,7 @@ h3 {
 
   .links > ol > li {
     margin: 10px 5px;
+    font-size: 16px;
   }
 
   .content, .spotifywrapper {
