@@ -124,6 +124,13 @@ nav {
   margin-top: 20px;
   letter-spacing: 0.1em;
   writing-mode: vertical-rl;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.sideelement2 > a:hover {
+  transform: scale(1.1);
+  color: #ffffffcc !important;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
 
 .sideelement1 {
@@ -146,6 +153,16 @@ nav {
 
 .sideelement1 > ul > li {
   margin-top: 20px;
+}
+
+.sideelement1 > ul > li > a > svg {
+  transition: transform 0.4s ease, fill 0.4s ease;
+}
+
+.sideelement1 > ul > li > a > svg:hover {
+  transform: scale(1.2);
+  fill: #ffffffcc;
+  transition: transform 0.4s ease, fill 0.4s ease;
 }
 
 .sideelement1::after {
